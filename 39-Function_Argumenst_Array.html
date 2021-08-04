@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Argumenst Array / Object</title>
+</head>
+
+<body>
+  <script>
+    function old() {
+      document.writeln(arguments[0] + '<br>');
+    }
+    old();
+    old(20);
+
+
+    function oldSum() {
+      let total = 0;
+      for (const arg of arguments) {
+        total += arg;
+      }
+      document.writeln(`<p>Totalnya adalah ${total}</p>`);
+    }
+    oldSum(1, 2, 3, 4, 5);
+
+
+  </script>
+</body>
+
+</html>

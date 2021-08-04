@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optional Chaining</title>
+</head>
+
+<body>
+  <script>
+    let person = {} // undefined (nullist)
+
+    // jika object bernilai nullist, saat kita mengakses property yang belum dibuat maka akan terjadi error
+    /* 
+    let country = person.address.country;
+    console.log(country);
+     */
+
+    // untuk menhindari error gunakan optional chaining
+    let country2 = person?.address?.country;
+    console.log(country2);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+~ Tipe Data Number ~
+
+- JavaScript hanya mendukung satu tipe data number, dimana tipe data di JavaScript bisa berupa bilangan bulat atau bilangan decimal.
+
+- Tipe seperti ini dibahasa pemograman lain yang biasanya membedakan tipe data number bilangan bulat dan bilangan decimal, di JavaScript semuanya disatukan.
+
+
+~ Number Notation ~
+
+- JavaScript mendukung number Notation, defaultnya ada basis 10. JavaScript juga mendukung binary, hexadecimal, dan octal.
+
+- hexadecimal:  0xFF
+- binary: 0b10101
+- octal: 0o10

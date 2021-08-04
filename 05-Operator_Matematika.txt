@@ -1,0 +1,20 @@
+~ Operator Aritmatika ~
+
+Operator                    |           Keterangan
++                           | Pertambahan  
+-                           | Pengurangan  
+*                           | Perkalian 
+**                          | Exponsial / Perpangkatan
+/                           | Pembagian 
+%                           | Sisa bagi 
+
+
+~ Operator Augmented Assignments ~
+
+Operator                    |           Keterangan
+result += 10                | result = result + 10  
+result -= 10                | result = result - 10  
+result *= 10                | result = result * 10  
+result **= 10               | result = result ** 10  
+result /= 10                | result = result / 10  
+result %= 10                | result = result % 10  

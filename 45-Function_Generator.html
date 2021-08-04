@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Generator</title>
+</head>
+
+<body>
+  <script>
+    // function generator adalah function yang mengenerate data sesuai yang kita butuhkan
+    function* createNames() {
+      yield 'Eko';
+      yield 'Andy';
+      yield 'Frian';
+    }
+    console.log(createNames());
+    // Data Generator tidak bisa di akses tapi bisa di iterasi (di looping);
+    const names = createNames();
+    for (const name of names) {
+      console.log(name);;
+    }
+
+    console.log('\n');
+    console.log('\n');
+    console.log('contoh lazy:');
+    console.log('\n');
+
+    // lazy
+    function* buatGanjil(value) {
+      for (let i = 1; i <= value; i++) {
+        if (i % 2 === 1) {
+          // generator bersifat lazy
+          console.log(`Yield ${i}`);
+          yield i;
+        }
+      }
+    }
+    // lazy adalah data tidak akan tampil sebelum dipanggil
+    const numbers = buatGanjil(10);
+    for (const number of numbers) {
+      console.log(number);
+    }
+
+    console.log('\n');
+    console.log('\n');
+    console.log('contoh eager:');
+    console.log('\n');
+
+    // eager
+    function buatGanjilArray(values) {
+      const result = [];
+      for (let i = 1; i <= values; i++) {
+        if (i % 2 === 1) {
+          console.log(`Yield ${i}`);
+          result.push(i);
+        }
+      }
+      return result;
+    }
+    const ganjils = buatGanjilArray(10);
+    for (let ganjil of ganjils) {
+      console.log(ganjil);
+    }
+
+    console.log('\n');
+    console.log('\n');
+    console.log('cara ngambil value generator');
+    console.log('\n');
+
+    const angka = buatGanjil(100)
+    console.log(angka.next().value);
+    console.log(angka.next().value);
+    console.log(angka.next().value);
+  </script>
+</body>
+
+</html>

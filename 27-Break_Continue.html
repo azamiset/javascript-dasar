@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break Continue</title>
+</head>
+
+<body>
+  <script>
+    document.writeln(`<p>Perulangan Untuk Break Berhenti Di Angka 10 :</p>`);
+
+    let counter = 1;
+    while (true) {
+      document.writeln(`<p>Perulangan ke ${counter}</p>`);
+      counter++;
+
+      // berhenti jika perulangan sampai dengan 10
+      if (counter > 10) {
+        break;
+      }
+    }
+
+    document.writeln(`<p>Perulangan Untuk Continue Melewati Angka Genap :</p>`);
+
+    for (let i = 0; i <= 20; i++) {
+      // jika angkanya genap maka lewati perulangnnya
+      if (i % 2 === 0) {
+        continue;
+      }
+      document.writeln(`<p>Perulangan ganjil ${i}</p>`);
+    }
+  </script>
+</body>
+
+</html>

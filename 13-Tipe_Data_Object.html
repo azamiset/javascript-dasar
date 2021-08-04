@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipe Data Object</title>
+</head>
+
+<body>
+  <script>
+  // Dalam Object, variabel disebut properties. Sedangkan function disebut dengan method
+  
+    let person = {};
+
+    person.nama = 'andy';
+    person.alamat = 'sukabumi';
+    person.umur = 30;
+
+    console.table(person);
+
+    // membuat Object literal
+    let orang = {
+      nama: 'Aswad',
+      umur: 30,
+      sayHello() {
+        return `Halo saya ${this.nama} dan sekarang berusia ${this.umur} tahun`
+      }
+    }
+
+    document.writeln(orang.sayHello());
+  </script>
+</body>
+
+</html>

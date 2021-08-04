@@ -1,0 +1,7 @@
+~ Console Method ~
+
+Method                  |       Keterangan
+console.info(...)       | Memberitahu informasi
+console.warn(...)       | Memberitahu informasi peringatan
+console.error(...)      | Memberitahu informasi error
+console.table(...)      | Memberitahu informasi dalam bentuk table

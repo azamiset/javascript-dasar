@@ -1,0 +1,7 @@
+~ Tipe Data Boolean ~
+
+- Tipe Data Boolean adalah tipe data yang berisikan data kebenaran, artinya hanya ada dua value data: benar atau salah (yes or no)
+
+- benar di representasikan denga kata kunci true dan salah representasikan dengan kata kunci false
+
+- walaupun tipe data Boolean merupakan tipe data yang sangat sederhan, tapi tipe data Boolean akan banyak digunakan di berbagai fitur pemograman.

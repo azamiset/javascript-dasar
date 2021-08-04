@@ -1,0 +1,14 @@
+~ Data Falsy ~
+
+Falsy:          | Keterangan:
+false           | Boolean false
+0, -0           | Number 0 dan -0 dianggap false
+'', " "         | Semua string kosong dianggap false
+null            | null dianggap false
+undefined       | undefined dianggap false
+NaN             | Not a Number dianggap false
+
+
+~ Data Truhty ~
+
+- selain data Falsy akan dianggap true (Truhty)

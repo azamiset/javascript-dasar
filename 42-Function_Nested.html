@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Nested / Bercabang</title>
+</head>
+
+<body>
+  <script>
+    // function didalam function (nested)
+    function outer() {
+      // inner adalah nested fuction
+      function inner() {
+        document.writeln(`<p>Inner</p>`);
+      }
+      inner();
+      inner();
+
+    }
+    outer();
+
+    inner();
+    console.log(inner());
+  </script>
+</body>
+
+</html>

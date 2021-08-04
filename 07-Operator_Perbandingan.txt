@@ -1,0 +1,22 @@
+~ Operasi Perbandingan ~
+
+- Operasi Perbandingan adalah operasi untuk membandingkan dua buah data
+
+- operasi Perbandingan adalah operasi yang mengahsilkan nilai boolean (benar atau salah)
+
+- jika hasilnya benar maka value-nya adalah true
+
+- jika hasilnya salah maka value-nya adalah false
+
+
+~ Operator Perbandingan ~
+
+Operator           |           Keterangan
+>                  | Lebih Dari  
+<                  | Kurang Dari
+>=                 | Lebih atau Sama Dengan
+<=                 | Kurang atau Sama Dengan
+==                 | Sama Dengan
+===                | Sama Dengan dan Sama Type Datanya
+!=                 | Tidak Sama Dengan
+!==                | Tidak Sama Dengan atau Tidak Sama Type

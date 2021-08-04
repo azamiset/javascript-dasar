@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truhty Falsy</title>
+</head>
+
+<body>
+  <script>
+    let data = '';
+    data ? document.writeln('1 true') : document.writeln('1 false');
+
+    document.writeln('<br>');
+
+    data = "false";
+    data ? document.writeln('2 true') : document.writeln('2 false');
+
+    document.writeln('<br>');
+
+    data = false;
+    data ? document.writeln('3 true') : document.writeln('3 false');
+
+    document.writeln('<br>');
+
+    (data = 0) ? document.writeln('4 true') : document.writeln('4 false');
+
+    document.writeln('<br>');
+
+    (data = -0) ? document.writeln('5 true') : document.writeln('5 false');
+
+    document.writeln('<br>');
+
+    (data = -1) ? document.writeln('6 true') : document.writeln('6 false');
+
+    document.writeln('<br>');
+
+    (data = 1) ? document.writeln('7 true') : document.writeln('7 false');
+  </script>
+</body>
+
+</html>

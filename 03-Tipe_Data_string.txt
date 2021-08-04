@@ -1,0 +1,25 @@
+~ Tipe Data String ~
+
+- Tipe Data String atau text adalah tipe data yang berisikan kumpulan kosong atau lebih karakter
+
+- sebelumnya kita sudah pernah menggunakan String ketika membuat program hello world
+
+- di JavaScript untuk membuat data dengan tipe String, kita perlu menggunakan " " (petik dua) atau ' ' (petik satu) sebelum dan sesudah isi text.
+
+
+~ Menambah String ~
+
+- Data String bisa digabung menggunakan operator + (plus).
+
+
+~ Escape Sequence ~
+
+- JavaScript mendukung Escape Sequence di String. Escape Sequence merupakan karakter khusus, seperti Enter, Tab, " (kutip dua) dan lain-lain. 
+
+- berikut contoh Escape Sequence yang didukung oleh JavaScript
+
+\n          |       Enter
+\tipe       |       Tab
+\'          |       '
+\"          |       "
+\\          |       \

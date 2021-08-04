@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring Default Value</title>
+</head>
+
+<body>
+  <script>
+    // Default value pada destructuring array
+    const names = ['jakarta', 'bandung'];
+    const [satu, dua, tiga = 'sukabumi'] = names;
+
+    console.log(satu);
+    console.log(dua);
+    console.log(tiga);
+
+    // Default value pada destructuring object
+    const person = {
+      firstName: 'Aswad',
+      lastName: 'Mibat'
+    }
+
+    let { firstName, middleName = 'Zainil', lastName } = person;
+    console.log(firstName);
+    console.log(middleName);
+    console.log(lastName);
+
+    // merubah nama variabel pada destructuring object
+    {
+      const person = {
+        firstName: 'Wandy',
+        lastName: 'Azami'
+      }
+
+      let {
+        firstName: namaDepan,
+        middleName: namaTengah = 'Coding',
+        lastName: namaBelakang
+      } = person;
+      console.log(namaDepan);
+      console.log(namaTengah);
+      console.log(namaBelakang);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Default Value</title>
+</head>
+
+<body>
+  <script>
+    // Kita bisa memberi nilai default di parameter
+    function register(name, age = 'UNKNOWN') {
+      document.writeln(`<p>${name}</p>`);
+      document.writeln(`<p>${age}</p>`);
+    }
+    // parameter age kosong akan bernilai 'UNKNOWN'
+    register('aswad');
+    // parameter age berisi akan menampilkan valuenya
+    register('Aswad', 30);
+
+
+  </script>
+</body>
+
+</html>

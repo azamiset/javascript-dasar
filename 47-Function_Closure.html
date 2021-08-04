@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Closure</title>
+</head>
+
+<body>
+  <script>
+    // Closure adalah kemampuan untuk mengeluarkan variabel dan function di local / nested scope agar dapat diakses di global scope
+
+    function createAdder(value) {
+      // local scope
+      const owner = "Eko";
+
+      function add(param) {
+        // nested scope
+        document.writeln(`<p>${owner}</p>`)
+        return value + param;
+      }
+      return add;
+    }
+    const addTwo = createAdder(2);
+    document.writeln(addTwo(10));
+    document.writeln(addTwo(6));
+
+    /*
+    seolah olah kita sedang membuat funstion seperti ini:
+    const owner = "Eko";
+    function addTwo(param) {
+      dodocument.writeln(`<p>${owner}</p>`);
+      return 2 + param;
+    }
+    */
+
+  </script>
+</body>
+
+</html>

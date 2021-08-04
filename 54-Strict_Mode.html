@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Strict Mode</title>
+  
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      let person = {
+        nama: 'andy',
+        umur: 30
+      }
+      
+      function lihatPerson () {
+       // dalam mode strict kode dibawah akan error
+       'use strict'
+        with(person) {
+          console.log(nama);
+          console.log(umur);
+        }
+      }
+      
+      lihatPerson();
+      // jika strict mode dimatikan kode diatas akan jalan
+    </script>
+  </body>
+</html>

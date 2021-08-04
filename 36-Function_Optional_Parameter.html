@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Optional Parameter</title>
+</head>
+
+<body>
+  <script>
+    // secara Default, parameter dalam function bersifat optional (tidak wajib diisi)
+    function sayHelo(firstName, middleName, lastName) {
+      document.writeln(`<p>${firstName}</p>`);
+      document.writeln(`<p>${middleName}</p>`);
+      document.writeln(`<p>${lastName}</p>`);
+    }
+    // parameter kosong akan bernilai 'undefined'
+    sayHelo();
+    //parameter yang berisi akan menampilkan valuenya
+    sayHelo('Aswad');
+    sayHelo('Wandy', 'Azami');
+    sayHelo('Aswad', 'Zainil', 'Mibat');
+
+
+  </script>
+</body>
+
+</html>

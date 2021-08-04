@@ -1,0 +1,13 @@
+~ Hasil dari Operator Type Of ~
+
+Type:           | Hasil:
+Undefined       | "undefined"
+Null            | "object"
+Boolean         | "boolean"
+Number          | "number"
+BitInt          | "bigint"
+String          | "string"
+Symbol          | "symbol"
+Function        | "function"
+Array           | "object"
+Lainnya         | "object"

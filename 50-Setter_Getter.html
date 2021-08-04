@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setter dan Getter</title>
+</head>
+
+<body>
+  <script>
+    // Setter dan getter adalah fiture untuk merubah method object menjadi properti.
+
+    // getter untuk mengambil value
+
+    // setter untuk merubah value
+
+
+    const person = {
+      firsName: 'Eko',
+      lastName: 'Khanedy',
+      get fullName() {
+        return `${this.firsName} ${this.lastName}`;
+      },
+      set fullName(value) {
+        const array = value.split(" ");
+        this.firsName = array[0];
+        this.lastName = array[1];
+      }
+    }
+
+    console.log(person.fullName);
+    console.table(person);
+
+    person.fullName = "Wandy Azami";
+    console.log(person.fullName);
+    console.table(person);
+
+    person.fullName = "Joe Swat";
+    console.log(person.fullName);
+    console.table(person);
+
+
+
+  </script>
+</body>
+
+</html>

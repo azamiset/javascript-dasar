@@ -1,0 +1,29 @@
+~ Variabel ~
+
+- Variabel adalah tempat untuk menyimpan data
+
+- dengan menyimpan data di variabel, kita bisa menggunakan lagi dengan menyebutkan nama variabel-nya
+
+- untuk membuat variabel di JavaScript, kita bisa menggunakan kata kunci var diikuti dengan nama variabel-nya
+
+- JavaScript adalah dinamic language, artinya variabel di JavaScript tidak terpaku harus menggunakan satu tipe data, kita bisa mengubah-ubah tipe data di variabel yang sama.
+
+
+~ Membuat Variabel Langsung Dangan Value-nya ~
+
+- di JavaScript juga kita bisa mendeklarisakan sebuah variabel langsung dengan isi Value-nya
+
+- caranya kita bisa menggunakan kata kunci var diikuti nama variabel lalu diikuti dengan tanda = (sama dengan) dan di ikuti dangan valuenya
+
+- contoh: var fullName = "Eko Kurniawan Khanedy";
+
+
+~ Kata Kunci let Dan const
+
+- sebelum tahun 2015, kata kunci untuk membuat variabel hanya var
+
+- namun tahun 2015 diperkenalkan kata kunci let dan const
+
+- let hampir sama dengan var hanya beda scope variabelnya
+
+- const adalah variabel yang bila sudah diisi value-nya maka tidak bisa reAssign / dibuat ulang (constanta).

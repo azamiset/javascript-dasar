@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring Parameter Function</title>
+</head>
+
+<body>
+  <script>
+    // mengambil data dalam object kedalam parameter
+    const person = {
+      firstName: 'Eko',
+      middleName: 'Kurniawam',
+      lastName: 'Khanedy',
+
+    }
+
+    function displayPerson({ firstName, middleName, lastName }) {
+      console.log(firstName);
+      console.log(middleName);
+      console.log(lastName);
+    }
+    displayPerson(person);
+
+
+    // mengabil data dari array kedalam parameter
+    function showArray([satu, dua]) {
+      console.log(satu);
+      console.log(dua);
+      console.log(satu + dua);
+    }
+    showArray([1, 2]);
+    showArray([5, 4]);
+  </script>
+</body>
+
+</html>

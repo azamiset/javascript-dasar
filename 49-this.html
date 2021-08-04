@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>this</title>
+</head>
+
+<body>
+  <script>
+    // Global Scope
+    console.log(this);
+
+    function sample() {
+      // local scope
+      console.log(this);
+
+      function inner() {
+        // nested scope
+        console.log(this);
+      }
+      inner();
+    }
+    sample();
+
+
+    // this dalam method object
+    const person = {
+      name: "andi",
+      sayHelo(myFriend) {
+        console.log(this);
+        console.log(`Helo ${myFriend} My name is ${this.name}`);
+        console.log(`Helo ${myFriend} My name is ${person.name}`);
+      }
+    }
+
+    person.sayHelo("Frian");
+    person.sayHelo("Riki");
+
+    // arrow function dalam object
+    const orang = {
+      nama: "Aswad",
+      kenalan: (myBro) => {
+        console.log(this);
+        console.log(`Helo ${myBro} My name is ${this.nama}`);
+        console.log(`Helo ${myBro} My name is ${orang.nama}`);
+      }
+    }
+
+    orang.kenalan('Haris')
+
+  </script>
+</body>
+
+</html>

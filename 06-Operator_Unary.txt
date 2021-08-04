@@ -1,0 +1,7 @@
+~ Operator Unary ~
+
+Operator                    |           Keterangan
++                           | Menandakan nilai positif  
+-                           | Menandakan nilai negatif  
+++                          | Increment, menaikan  1 angka 
+--                          | Decrement, menurunkan 1 angka

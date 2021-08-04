@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Anonymous</title>
+</head>
+
+<body>
+  <script>
+    // anonymous function dalam variabel
+    const say = function (name) {
+      document.writeln(`<p>hello ${name}</p>`)
+    }
+    say('andy');
+
+    // callback adalah memanggil function didalam function lain
+    function giveMeName(callback) {
+      // console.log(callback);
+      callback('eko');
+    }
+    //memanggil function expression dalam argumen
+    giveMeName(say);
+
+    // memanggil anonymous function dalam argument
+    giveMeName(function (name) {
+      console.log(name);
+      document.writeln(`<p>helo apa kabar ${name}</p>`)
+    });
+
+    giveMeName(function (name) {
+      document.writeln(`<p>helo apa kabar ${name}</p>`)
+    });
+
+    giveMeName(function (name) {
+      document.writeln(`<p>helo apa kabar ${name}</p>`)
+    });
+
+  </script>
+</body>
+
+</html>

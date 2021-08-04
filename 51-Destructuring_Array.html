@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring Array</title>
+</head>
+
+<body>
+  <script>
+    // pemecah data dalam array
+    const names = ['Eko', 'Kurniawan', 'Khanedy', 'Joko', 'Anwar'];
+    const [satu, dua, tiga, ...lainnya] = names;
+
+    console.log(satu);
+    console.log(dua);
+    console.log(tiga);
+    console.log(lainnya);
+
+    // mengambil data dalam object
+    const person = {
+      firstName: 'Eko',
+      middleName: 'Kurniawam',
+      lastName: 'Khanedy',
+      address: {
+        street: 'Jalan Belum Ada',
+        city: 'Jakarta',
+        country: 'Indonesia'
+      },
+      skill: {
+        bahasa: 'English',
+        coding: 'JavaScript',
+        musik: 'guitar'
+      },
+      hobby: "Games",
+      channel: "Programer Zaman Now"
+    }
+
+    const { firstName, lastName, middleName, skill: { bahasa, coding, musik }, address, ...others } = person;
+    console.log(firstName);
+    console.log(middleName);
+    console.log(lastName);
+    console.log(address);
+    console.log(bahasa);
+    console.log(coding);
+    console.log(musik);
+    console.log(others);
+  </script>
+</body>
+
+</html>

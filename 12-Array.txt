@@ -1,0 +1,15 @@
+~ Operasi di Array ~
+
+Operasi               | Keterangan
+array.push(value)     | menambah data ke array
+array.length          | untuk mendapatkan panjang array
+array[index]          | mendapatkan data di posisi index
+array[index] = value  | mengubah data di posisi index
+delete array[index]   | menghapus data di posisi index, namun index tidak bergeser
+
+
+~ method array ~
+push()    : menambah element baru di akhir array
+pop()     : menghapus element di akhir array
+unshift() : menambah element baru di awal array
+shift()   : menghapus element di awal array

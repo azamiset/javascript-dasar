@@ -1,0 +1,38 @@
+~ Operator Logika ~
+
+- Operator Logika adalah Operator untuk dua buah data boolean
+
+- hasil dari Operator Logika adalah boolean lagi.
+
+
+~ Contoh Operator Logika ~
+
+Operator           |           Keterangan
+&&                 | Dan  
+||                 | Atau
+!                  | Kebalikan
+
+
+~ Operator && ~
+
+Nilai 1   | Operator  | Nilai 2   | Hasil
+true      | &&        | true      | true
+true      | &&        | false     | false
+false     | &&        | true      | false
+false     | &&        | true      | false
+
+
+~ Operator || ~
+
+Nilai 1   | Operator  | Nilai 2   | Hasil
+true      | ||        | true      | true
+true      | ||        | false     | true
+false     | ||        | true      | true
+false     | ||        | true      | false
+
+
+~ Operator Unary ! ~
+
+Operator  | Nilai 2   | Hasil
+!         | true      | false
+!         | false     | true

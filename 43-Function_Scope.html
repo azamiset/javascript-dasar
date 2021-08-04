@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Scope</title>
+</head>
+
+<body>
+  <script>
+    // Global Scope
+    let counter = 0;
+
+    // Global Scope
+    function hitMe() {
+      // local scope hitMe
+      counter++;
+    }
+
+    // Global Scope
+    function other() {
+      // local scope other
+      return hitMe();
+    }
+    hitMe();
+    other();
+    console.log(counter);
+
+    function first() {
+      // local scope first
+      let name = 'Andy';
+
+      function second() {
+        // nested scope
+        console.log(name);
+      }
+      second();
+    }
+    first();
+
+    // variabel atau function di global scope bisa diakses dimanapun (di global, local dan nested)
+
+    // variabel atau function di local scope hanya bisa diaksek di local dan nested.
+
+    // variabel atau function di nested scope hanya bisa diakses di nested saja.
+  </script>
+</body>
+
+</html>

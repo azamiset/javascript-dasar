@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi string to number</title>
+</head>
+
+<body>
+  <script>
+    const value1 = '1';
+    const value2 = 1;
+    const sum = value1 + value2;
+    document.writeln(sum);
+    document.writeln('<br>');
+
+    const value3 = parseInt(value1);
+    const sum2 = value3 + value2;
+    document.writeln(sum2);
+
+    document.writeln(`<p>${parseInt("salah")}</p>`);
+    document.writeln(`<p>${Number("1salah")}</p>`);
+    document.writeln(`<p>${Number("1.1salah")}</p>`);
+    document.writeln(`<p>${Number("1.1")}</p>`);
+    document.writeln(`<p>${value2.toString()}</p>`);
+
+  </script>
+</body>
+
+</html>

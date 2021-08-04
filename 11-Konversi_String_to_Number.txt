@@ -1,0 +1,7 @@
+~ melakukan konversi string ke number ~
+
+function            | Keterangan
+parseInt(string)    | Konversi ke bilangan bulat
+parseFloat(string)  | Konversi ke bilangan pecahan
+Number(string)      | Konversi ke bulat / pecahan
+number.toString()   | Konversi number ke string
